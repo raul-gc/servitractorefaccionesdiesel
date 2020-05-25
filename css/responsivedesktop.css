@@ -1,0 +1,330 @@
+@media (min-width: 1680px) and (max-width: 1920px) {
+
+    .titulo {
+        font-size: 35px;
+    }
+
+    .titulo-cat {
+        font-size: 35px;
+        padding-top: 50px;
+    }
+
+    header {
+        height: 1000px;
+    }
+
+    nav .logo img {
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    .infocontacto {
+        font-size: 28px;
+    }
+
+    .enlaces {
+        font-size: 25px;
+    }
+
+    .enlaces a:hover,
+    .active {
+        border-top: 2px solid #b92b27;
+        border-bottom: 2px solid #b92b27;
+        font-size: 29px;
+    }
+
+    /* barra redes */
+    .iconobar .faceb {
+        height: 65px;
+        width: 65px;
+    }
+
+    .iconobar .whats {
+        height: 65px;
+        width: 65px;
+    }
+
+    .iconobar .mail {
+        height: 65px;
+        width: 65px;
+    }
+
+    .iconobar .llamada {
+        height: 65px;
+        width: 65px;
+    }
+
+    .barra:hover {
+        height: 70px;
+        width: 95px;
+    }
+
+    /* subir */
+    .ir-arriba {
+        font-size: 70px;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    /* textos del header */
+    .textos-header form {
+        margin-left: 80%;
+    }
+
+    /* sobre nosotros */
+    .sobre-nosotros {
+        height: 780px;
+    }
+
+    .contenedor-sobre-nosotros {
+        max-width: 1500px;
+    }
+
+    .imagen-about-us {
+        width: 650px;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 800px;
+        margin: auto;
+    }
+
+    .contenido-textos h3 {
+        font-size: 33px;
+        margin-bottom: 20px;
+    }
+
+    .contenido-textos p {
+        font-size: 26px;
+    }
+
+    .contenido-textos .botn-nosotros {
+        text-align: right;
+        font-size: 25px;
+    }
+
+    /* catalogo */
+
+    .productos {
+        width: 100%;
+        height: 550px;
+    }
+
+    div.cards {
+        margin: 40px auto;
+        max-width: 1900px;
+        text-align: center;
+    }
+
+    /* servicios */
+    .servicio-cont {
+        height: 550px;
+    }
+
+
+    .info>h2 {
+        font-size: 30px;
+    }
+
+    .info>p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .ServicioContainer {
+        width: 400px;
+        height: 500px;
+        margin: 0 70px;
+    }
+
+    .service .info {
+        padding: 26px;
+    }
+
+    .front .img {
+        height: 350px;
+        margin-left: 65px;
+    }
+
+    .back h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .back li {
+        line-height: 21px;
+        font-size: 17px;
+    }
+
+    .back .btn {
+        height: 50px;
+        margin-left: 85px;
+        font-size: 22px;
+    }
+
+    /* footer */
+    .enlaces-footer {
+        font-size: 21px;
+        line-height: 37px;
+    }
+
+    .contenedor-footer li {
+        font-size: 21px;
+        line-height: 35px;
+    }
+
+    .titu {
+        font-size: 30px;
+    }
+
+    .titu1 {
+        font-size: 30px;
+    }
+
+    .map {
+        height: 300px;
+    }
+
+    .horario .dia {
+        font-size: 24px;
+    }
+
+    .horario .hora {
+        font-size: 23px;
+    }
+
+    .titulo-final h2 {
+        font-size: 21px;
+    }
+
+    .titu-finales {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0 12px;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1680px) {
+
+    .infocontacto {
+        margin-left: 70px;
+        font-size: 25px;
+    }
+
+    .textos-header .encu {
+        margin-top: 5%;
+    }
+
+    .map {
+        height: 250px;
+    }
+
+}
+
+
+@media (min-width: 1440px) and (max-width: 1600px) {
+    .titulo {
+        font-size: 35px;
+    }
+
+    .titulo-cat {
+        font-size: 35px;
+        padding-top: 50px;
+    }
+
+    header {
+        height: 850px;
+    }
+
+    nav .logo img {
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    .infocontacto {
+        font-size: 28px;
+    }
+
+    .enlaces {
+        font-size: 25px;
+    }
+
+    .enlaces a:hover,
+    .active {
+        border-top: 2px solid #b92b27;
+        border-bottom: 2px solid #b92b27;
+        font-size: 29px;
+    }
+
+    /* barra redes */
+    .iconobar .faceb {
+        height: 60px;
+        width: 60px;
+    }
+
+    .iconobar .whats {
+        height: 60px;
+        width: 60px;
+    }
+
+    .iconobar .mail {
+        height: 60px;
+        width: 60px;
+    }
+
+    .iconobar .llamada {
+        height: 60px;
+        width: 60px;
+    }
+
+    .barra:hover {
+        height: 65px;
+        width: 85px;
+    }
+
+    /* subir */
+    .ir-arriba {
+        font-size: 60px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    /* textos del header */
+    .textos-header form {
+        margin-left: 80%;
+    }
+
+    /* sobre nosotros */
+    .sobre-nosotros {
+        height: 780px;
+    }
+
+    .contenedor-sobre-nosotros {
+        max-width: 1300px;
+    }
+
+    .imagen-about-us {
+        width: 600px;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 800px;
+        margin: auto;
+    }
+
+    .contenido-textos h3 {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+
+    .contenido-textos p {
+        font-size: 23px;
+    }
+
+    .contenido-textos .botn-nosotros {
+        text-align: right;
+        font-size: 22px;
+    }
+
+}
