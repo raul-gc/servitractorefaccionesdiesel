@@ -41,7 +41,7 @@ window.onscroll = function () {
     document.getElementById('serviciossec').style.opacity = '1';
 
   } else {
-    document.getElementById('navbar').style.top = '-100px';
+    document.getElementById('navbar').style.top = '-1000px';
     document.getElementById('navbar').style.position = 'fixed';
     document.getElementById('navbar').style.width = '100%';
     document.getElementById('navbar').style.zIndex = '1001';

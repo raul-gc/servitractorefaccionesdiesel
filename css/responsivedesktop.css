@@ -207,13 +207,17 @@
 
 @media (min-width: 1600px) and (max-width: 1680px) {
 
+    header {
+        height: 850px;
+    }
+
     .infocontacto {
         margin-left: 70px;
         font-size: 25px;
     }
 
     .textos-header .encu {
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     .map {
@@ -222,8 +226,551 @@
 
 }
 
+/* samsung galaxy s6 */
+@media (min-width: 1440px) and (max-width: 1500px) {
+    .icono {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 200px;
+        height: 100%;
+        color: #b92c27;
+        padding-right: 2%;
+        z-index: 110;
+        cursor: pointer;
+        right: 0;
+    }
 
-@media (min-width: 1440px) and (max-width: 1600px) {
+    .logomenu {
+        display: block;
+        width: 70%;
+        margin-top: 2vh;
+        margin-bottom: -8vh;
+    }
+
+    .enlaces {
+        position: fixed;
+        font-size: 70px;
+        margin-right: -.1%;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        transition: all 1s ease;
+        background: #00134d;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #6f0000, #00134d);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #6f0000, #00134d);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .uno {
+        -webkit-clip-path: circle(0% at 100% 0%);
+        clip-path: circle(0% at 100% 0%);
+    }
+
+    .dos {
+        -webkit-clip-path: circle(150% at 100% 0%);
+        clip-path: circle(150% at 100% 0%);
+    }
+      
+      .enlaces a:hover,
+      .active {
+        border-top: 10px solid #b92b27;
+        border-bottom: 10px solid #b92b27;
+        font-size: 80px;
+      } 
+
+     nav .logo {
+        height: 100%;
+        width: 70%;
+        margin-left: 1%;
+    }
+
+    .infocontacto {
+        font-size: 55px;
+        width: 40%;
+        line-height: 70px;
+        margin-left: 1%;
+    }
+
+    .infocontacto .telef {
+        font-size: 80px;
+    }
+ 
+    header {
+        height: 2200px;
+    }
+    
+
+    .headp {
+        margin-top: 22%;
+      }
+/* barra social */
+      .barra-social {
+        top: 55%;
+      }
+      
+      .iconobar .faceb {
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 0 25px 0px 0;
+      }
+      
+      .iconobar .whats {
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+      }
+      
+      .iconobar .mail {
+        height: 150px;
+        width: 150px;
+        padding: 18px;
+      }
+      
+      .iconobar .llamada {
+        height: 150px;
+        width: 150px;
+        padding: 18px;
+        border-radius: 0 0px 25px 0;
+      }
+      
+      .barra:hover {
+        height: 180px;
+        width: 180px;
+        padding: 15px;
+        border-radius: 0 26px 26px 0;
+      }
+      
+      /*hacia arriba*/
+      .ir-arriba {
+        font-size: 170px;
+        bottom: 100px;
+        right: 40px;
+      }
+      
+      /* Busqueda */
+      header .areasearch {
+        height: 10%;
+    }
+      
+      .areasearch form {
+        width: 100%;
+        margin-left: 15%;
+      }
+      
+      fieldset {
+        border: none;
+      }
+      
+      input,
+      button {
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 150px;
+        padding: 0;
+      }
+      
+      input {
+        border-radius: 35px;
+        font-size: 60px;
+        padding-left: 10%;
+        z-index: 50;
+      }
+      
+      button {
+        width: 20%;
+        font-size: 88px;
+         }
+
+      #box-search {
+        position: fixed;
+        top: 19%;
+        width: 49%;
+        background: white;
+        overflow: hidden;
+        font-family: 'source sans pro';
+        font-size: 63px;
+        font-weight: 600;
+        display: none;
+        padding-top: .7%;
+        z-index: 45;
+      }
+      
+      #box-search li a {
+        display: block;
+        color: #666;
+        padding: 2%;
+        text-decoration: none;
+      }
+      
+      #box-search li a:hover {
+        background: #f3f3f3;
+      }
+      
+      #box-search li .bu {
+        color: #777777;
+        margin-right: 2%;
+        font-size: 50px;
+      }
+      
+      #cover-ctn-search {
+        margin-top: -6%;
+        width: 100%;
+        height: 80%;
+        position: fixed;
+        left: 0;
+        z-index: 40;
+        display: none;
+      }
+      
+      /* textos del header */
+      .headp .textos-header {
+        margin-top: 1%;
+      }
+      
+      .textos-header h1 {
+        font-size: 13vw;
+        border-bottom: 6px double whitesmoke;
+        text-shadow: 15px 15px 15px black;
+      }
+      
+      .textos-header .encu {
+        letter-spacing: 12px;
+        margin-bottom: 30px;
+      }
+      
+      .textos-header .la {
+        letter-spacing: 12px;
+        margin-bottom: 30px;
+      }
+      
+      .textos-header .que {
+        margin-left: 20%;
+        letter-spacing: 9px;
+      }
+      
+      .textos-header .atra {
+        margin: 6% 20% 0% 10%;
+        font-size: 5.5vw;
+        text-shadow: 15px 15px 15px black;
+        letter-spacing: 5px;
+      }
+      
+      .textos-header .servi {
+        font-size: 11vw;
+        letter-spacing: 5px;
+        text-shadow: 17px 17px 15px black;
+      }
+      
+      .textos-header .refa {
+        letter-spacing: 4px;
+        font-size: 6vw;
+        margin-left: 15%;
+        margin-right: 11%;
+        margin-top: -5%;
+        border-bottom: 7px double whitesmoke;
+        text-shadow: 17px 17px 15px black;
+      }
+            
+.titulo {
+    font-size: 100px;
+    padding: 30px;
+    border-bottom: 8px solid #b92b27;
+  }
+  
+      /* sobre nosotros */
+      .sobre-nosotros {
+        height: 2080px;
+      }
+      
+      .contenedor-sobre-nosotros {
+        max-width: 1060px;
+        flex-wrap: wrap;
+      }
+      
+      .imagen-about-us {
+        width: 1100px;
+      }
+      
+      .imagen-about-us>img {
+        width: 95%;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.6);
+      }
+      
+      .sobre-nosotros .contenido-textos {
+        padding-top: 100px;
+        width: 1200px;
+      }
+      
+      .contenido-textos h3 {
+        font-size: 90px;
+        margin-bottom: 25px;
+      }
+      
+      .contenido-textos p {
+        font-size: 46px;
+      }
+      
+      .contenido-textos .botn-nosotros {
+        text-align: center;
+        font-size: 50px;
+      }
+      
+      /* Catalogo */
+      .titulo-cat {
+        font-size: 100px;
+        padding-top: 60px;
+        border-bottom: 8px solid #b92b27;
+      }
+      
+      .productos {
+        width: 100%;
+      }
+       
+      a.btn {
+        font-size: 50px;
+        border-radius: 14px;
+        padding: 14px 60px 16px;
+      }
+      
+      div.cards {
+        margin: 50px auto 80px auto;
+        width: 100%;
+        text-align: center;
+      }
+      
+      div.card {
+        display: inline-block;
+        margin: 50px;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+        position: relative;
+        text-align: left;
+        -webkit-transition: all 0.3s 0s ease-in;
+        transition: all 0.3s 0s ease-in;
+        z-index: 1;  
+        max-width: 100%;
+        width: 900px; 
+      }
+      
+      div.card .card__image-holder {
+        background: rgba(0, 0, 0, 0.1);
+        width: 900px;
+        padding-bottom: 75%; 
+      }
+       
+      div.card img {
+        margin-top: 0px;
+        max-width:900px;
+        width: 1500px;
+      }
+
+      div.card div.card-title a.toggle-info {
+        border-radius: 120px;
+        height: 110px;
+        padding: 0;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        width: 110px;
+      }
+      
+      div.card div.card-title a.toggle-info span {
+        height: 2px;
+        top: 60px;
+        width: 50px;
+      }
+      
+      div.card div.card-title a.toggle-info span.left {
+        right: 46px;
+      
+      }
+      
+      div.card div.card-title a.toggle-info span.right {
+        left: 46px;
+      }
+      
+      div.card div.card-title h2 {
+        font-size: 85px;
+        letter-spacing: .01em;
+      }
+      
+      div.card div.card-title h2 small {
+        font-size: 62px;
+      }
+      
+      div.card div.card-description {
+        font-size: 45px;
+      }
+      
+      div.card.show div.card-title a.toggle-info span {
+        top: 55px;
+      }
+      
+      div.card.show div.card-title a.toggle-info span.left {
+        right: 30px;
+      }
+      
+      div.card.show div.card-title a.toggle-info span.right {
+        left: 30px;
+      }
+      
+    
+      /* Servicios */
+      
+      .servicio-cont {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+      }
+      
+      .ServicioContainer {
+        position: relative;
+        width: 900px;
+        height: 1180px;
+        min-width: 300px;
+        min-height: 400px;
+        margin: 8px;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+      }
+      
+      .info>h2 {
+        font-size: 80px;
+        padding: 0 10px;
+      }
+      
+      .info>p {
+        font-size: 52px;
+      }
+      
+      .front .img {
+        width: 80%;
+        height: 740px;
+        margin-top: 20px;
+        margin-left: 95px;
+      }
+
+      .back h2 {
+        font-size: 80px;
+      }
+      
+      .back li {
+        line-height: 48px;
+        margin: 20px 60px;
+        font-size: 50px;
+      }
+      
+      .back .btn {
+        bottom: 40px;
+        width: calc(36% - 62px);
+        height: 80px;
+        margin-left: 300px;
+        border-radius: 10px;
+        font-size: 48px;
+      }  
+      
+      /* Footer */
+      
+      .enlaces-footer {
+        font-size: 60px;
+        line-height: 70px;
+      }
+      
+      .enlaces-footer:hover {
+        color: #b92b27;
+        font-weight: 600;
+        padding-left: 5px;
+      }
+      
+      .contenedor-footer li {
+        list-style: none;
+        font-size: 60px;
+        line-height: 70px;
+      }
+      
+      .titu {
+        font-size: 84px;
+        margin-bottom: 34px;
+        text-align: center;
+        border-bottom: 5px solid whitesmoke;
+      }
+      
+      .titu1 {
+        font-size: 84px;
+       margin-bottom: 34px;
+        text-align: center;
+        border-bottom: 5px solid whitesmoke;
+      }
+      
+      .contacto {
+        max-width: 75%;
+      }
+      
+      .contacto a img {
+        width: 85%;
+        margin-left: 60px;
+        margin-bottom: -1%;
+      }
+      
+      .horario .dia {
+        font-size: 65px;
+      }
+      
+      .horario .hora {
+        margin-left: 8%;
+        font-size: 60px;
+      }
+      
+      .map {
+        height: 700px;
+      }
+      
+      .map iframe {
+        margin-left: 15%;
+        margin-top: 2%;
+      }
+      
+      .footer-part2 {
+        max-width: 100%;
+      }
+      
+      .acerca-de {
+        width: 85%;
+        margin-top: 3%;
+      }
+      
+      .contenedor-logos {
+        max-width: 80%;
+      }
+           
+      .titulo-final {
+        margin-top: -1%;
+        width: 1500px;
+        background: #b92b27;
+      }
+      
+      .titulo-final h2 {
+        font-size: 48px;
+        margin-bottom: 1%;
+      }
+      
+      .titu-finales {
+        font-size: 50px;
+        padding: 0 20px;
+      }
+      
+}
+
+
+@media (min-width: 1441px) and (max-width: 1600px) {
     .titulo {
         font-size: 35px;
     }
@@ -233,8 +780,9 @@
         padding-top: 50px;
     }
 
-    header {
-        height: 850px;
+
+    .textos-header .encu {
+        margin-top: 2%;
     }
 
     nav .logo img {
@@ -244,6 +792,11 @@
 
     .infocontacto {
         font-size: 28px;
+    }
+
+    .infocontacto .telef {
+        font-size: 35px;
+        margin-left: 25%;
     }
 
     .enlaces {

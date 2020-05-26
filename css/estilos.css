@@ -146,8 +146,8 @@ nav .logo {
   text-align: center;
 }
 
-.infocontacto .telef { 
-  font-size: 25px; 
+.infocontacto .telef {
+  font-size: 25px;
   margin-right: 7px;
 }
 
@@ -395,7 +395,8 @@ input:focus+button .fa {
 .wave {
   position: absolute;
   bottom: 0;
-  width: 100%;/* 
+  width: 100%;
+  /* 
   z-index: 41; */
 }
 
@@ -986,6 +987,7 @@ footer {
   width: 70%;
   height: 90%;
   margin-left: 15%;
+  margin-top: 4%;
 }
 
 .footer-part2 {
@@ -1050,24 +1052,17 @@ footer {
   padding: 0 8px;
 }
 
-
 /* Inicia responsive */
-@media only screen and (max-width:1024px){
 
-  header nav {
-    height: 6vh;
-  }
-}
-
-@media screen and (max-width:850px){
+@media (min-width:1050px) and (max-width:1150px) {
   .icono {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 13vw;
     height: 100%;
     color: #b92c27;
-    padding: 3%;
+    padding-right: 2%;
     z-index: 110;
     cursor: pointer;
     right: 0;
@@ -1075,13 +1070,14 @@ footer {
 
   .logomenu {
     display: block;
-    width: 50%;
+    width: 80%;
     margin-top: 2vh;
     margin-bottom: -8vh;
   }
 
   .enlaces {
     position: fixed;
+    font-size: 70px;
     margin-right: -.1%;
     right: 0;
     height: 100vh;
@@ -1106,138 +1102,1172 @@ footer {
     clip-path: circle(150% at 100% 0%);
   }
 
+  .enlaces a:hover,
+  .active {
+    border-top: 10px solid #b92b27;
+    border-bottom: 10px solid #b92b27;
+    font-size: 80px;
+  }
+
   nav .logo {
     height: 100%;
-    width: 30%;  
-    margin-left: 7%;
-  }
-  
-  .infocontacto {
-    font-size: 18px;
-    width: 40%;
-    line-height: 17px;
-    margin-left: 2%;
-  }
-  
-  .infocontacto .telef {
-    font-size: 19px;
-  }
-}
-
-@media (min-width: 360px) and (max-width: 530px){
-
-  .logomenu {
-    width: 70%;
-  }
-
-  nav .logo {
-    width: 50%;
-    margin-left: 4%;
-  }
-  
-  .infocontacto {
-    font-size: 16px;
-    width: 40%;
-    line-height: 18px;
-    margin-left: 2%;
-  }
-  
-  .infocontacto .telef {
-    font-size: 18px;
+    width: 65%;
     margin-left: 1%;
-}
-}
-
-@media (min-width: 320px) and (max-width:359px){
-  
-  .logomenu {
-    width: 80%;
   }
 
+  .infocontacto {
+    font-size: 4vw;
+    width: 40%;
+    line-height: 90%;
+    margin-left: 1%;
+  }
 
-  .titulo {
-    font-size: 23px;
-    padding: 3px;
-    border-bottom: 2px solid #b92b27;
-    margin: 40px 40px 20px 40px;
-  } 
+  .infocontacto .telef {
+    font-size: 6vw;
+  }
 
+  header {
+    height: 90vh;
+  }
+
+  .headp {
+    margin-top: 22%;
+  }
+
+  /* barra social */
   .barra-social {
     top: 55%;
   }
-  
+
   .iconobar .faceb {
-    height: 40px;
-    width: 40px;
+    height: 135px;
+    width: 135px;
+    padding: 10px;
+    border-radius: 0 25px 0px 0;
   }
-  
+
   .iconobar .whats {
-    height: 40px;
-    width: 40px;
+    height: 135px;
+    width: 135px;
+    padding: 10px;
   }
-  
+
   .iconobar .mail {
-    height: 40px;
-    width: 40px;
+    height: 135px;
+    width: 135px;
+    padding: 18px;
   }
-  
+
   .iconobar .llamada {
-    height: 40px;
-    width: 40px;
+    height: 135px;
+    width: 135px;
+    padding: 18px;
+    border-radius: 0 0px 25px 0;
   }
-  
+
   .barra:hover {
-    height: 45px;
-    width: 55px;
-    padding: 3px;
-    border-radius: 0 12px 12px 0;
+    height: 160px;
+    width: 160px;
+    padding: 15px;
+    border-radius: 0 26px 26px 0;
   }
-  
+
   /*hacia arriba*/
   .ir-arriba {
-    font-size: 40px;
-    bottom: 10px;
-    right: 10px;
+    font-size: 14vw;
+    bottom: 2%;
+    right: 4%;
   }
-  
-  /* menu desplegable */
-  nav .logo {
-    width: 40%;
-    margin-left: 3%;
+
+  /* Busqueda */
+  header .areasearch {
+    height: 7%;
   }
-  
+
+  .areasearch form {
+    width: 100%;
+    margin-left: 15%;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  input,
+  button {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 7vh;
+    padding: 0;
+  }
+
+  input {
+    border-radius: 35px;
+    font-size: 5vw;
+    padding-left: 10%;
+    z-index: 50;
+  }
+
+  button {
+    width: 20%;
+    font-size: 8vw;
+  }
+
+  #box-search {
+    position: fixed;
+    top: 19.5%;
+    width: 49%;
+    background: white;
+    overflow: hidden;
+    font-family: 'source sans pro';
+    font-size: 63px;
+    font-weight: 600;
+    display: none;
+    padding-top: .7%;
+    z-index: 45;
+  }
+
+  #box-search li a {
+    display: block;
+    color: #666;
+    padding: 2%;
+    text-decoration: none;
+  }
+
+  #box-search li a:hover {
+    background: #f3f3f3;
+  }
+
+  #box-search li .bu {
+    color: #777777;
+    margin-right: 2%;
+    font-size: 5vw;
+  }
+
+  #cover-ctn-search {
+    margin-top: -6%;
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    left: 0;
+    z-index: 40;
+    display: none;
+  }
+
+  /* textos del header */
+  .headp .textos-header {
+    margin-top: 4%;
+  }
+
+  .textos-header h1 {
+    font-size: 13vw;
+    border-bottom: 6px double whitesmoke;
+    text-shadow: 15px 15px 15px black;
+  }
+
+  .textos-header .encu {
+    letter-spacing: 12px;
+    margin-bottom: 3vh;
+  }
+
+  .textos-header .la {
+    letter-spacing: 12px;
+    margin-bottom: 3vh;
+  }
+
+  .textos-header .que {
+    margin-left: 10%;
+    letter-spacing: 9px;
+  }
+
+  .textos-header .atra {
+    margin: 6% 25% 0% 30%;
+    font-size: 5.5vw;
+    text-shadow: 15px 15px 15px black;
+    letter-spacing: 5px;
+  }
+
+  .textos-header .servi {
+    font-size: 9.5vw;
+    letter-spacing: 5px;
+    margin-left: 10%;
+    text-shadow: 17px 17px 15px black;
+  }
+
+  .textos-header .refa {
+    letter-spacing: 4px;
+    font-size: 5.5vw;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: -4%;
+    border-bottom: 7px double whitesmoke;
+    text-shadow: 17px 17px 15px black;
+  }
+
+  .titulo {
+    font-size: 8vw;
+    padding: 2%;
+    border-bottom: 8px solid #b92b27;
+  }
+
+  /* sobre nosotros */
+  .sobre-nosotros {
+    height: 2080px;
+  }
+
+  .contenedor-sobre-nosotros {
+    max-width: 1060px;
+    flex-wrap: wrap;
+  }
+
+  .imagen-about-us {
+    width: 85%;
+  }
+
+  .imagen-about-us>img {
+    width: 95%;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .sobre-nosotros .contenido-textos {
+    padding-top: 100px;
+    width: 83%;
+  }
+
+  .contenido-textos h3 {
+    font-size: 8vw;
+    margin-bottom: 25px;
+  }
+
+  .contenido-textos p {
+    font-size: 4.5vw;
+  }
+
+  .contenido-textos .botn-nosotros {
+    text-align: center;
+    font-size: 5.5vw;
+  }
+
+  /* Catalogo */
+  .titulo-cat {
+    font-size: 8vw;
+    padding-top: 5%;
+    border-bottom: 8px solid #b92b27;
+  }
+
+  .productos {
+    width: 100%;
+  }
+
+  a.btn {
+    font-size: 5vw;
+    border-radius: 14px;
+    padding: 14px 60px 16px;
+  }
+
+  div.cards {
+    margin: 50px auto 80px auto;
+    width: 75%;
+    text-align: center;
+  }
+
+  div.card {
+    display: inline-block;
+    margin: 50px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.3s 0s ease-in;
+    transition: all 0.3s 0s ease-in;
+    z-index: 1;
+    max-width: 100%;
+    width: 900px;
+  }
+
+  div.card .card__image-holder {
+    background: rgba(0, 0, 0, 0.1);
+    width: 700px;
+    padding-bottom: 75%;
+  }
+
+  div.card img {
+    margin-top: 0px;
+    max-width: 900px;
+    width: 810px;
+  }
+
+  div.card div.card-title a.toggle-info {
+    border-radius: 120px;
+    height: 110px;
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 110px;
+  }
+
+  div.card div.card-title a.toggle-info span {
+    height: 2px;
+    top: 60px;
+    width: 50px;
+  }
+
+  div.card div.card-title a.toggle-info span.left {
+    right: 46px;
+
+  }
+
+  div.card div.card-title a.toggle-info span.right {
+    left: 46px;
+  }
+
+  div.card div.card-title h2 {
+    font-size: 8vw;
+    padding-top: 11%;
+    letter-spacing: .01em;
+  }
+
+  div.card div.card-title h2 small {
+    font-size: 62px;
+  }
+
+  div.card div.card-description {
+    font-size: 45px;
+  }
+
+  div.card.show div.card-title a.toggle-info span {
+    top: 55px;
+  }
+
+  div.card.show div.card-title a.toggle-info span.left {
+    right: 30px;
+  }
+
+  div.card.show div.card-title a.toggle-info span.right {
+    left: 30px;
+  }
+
+
+  /* Servicios */
+
+  .servicio-cont {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ServicioContainer {
+    position: relative;
+    width: 900px;
+    height: 1180px;
+    min-width: 300px;
+    min-height: 400px;
+    margin: 8px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+
+  .info>h2 {
+    font-size: 7vw;
+    padding: 0 10px;
+  }
+
+  .info>p {
+    font-size: 52px;
+  }
+
+  .front .img {
+    width: 80%;
+    height: 740px;
+    margin-top: 20px;
+    margin-left: 95px;
+  }
+
+  .back h2 {
+    font-size: 80px;
+  }
+
+  .back li {
+    line-height: 48px;
+    margin: 20px 60px;
+    font-size: 50px;
+  }
+
+  .back .btn {
+    bottom: 40px;
+    width: calc(36% - 62px);
+    height: 80px;
+    margin-left: 300px;
+    border-radius: 10px;
+    font-size: 48px;
+  }
+
+  /* Footer */
+
+  .enlaces-footer {
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+
+  .enlaces-footer:hover {
+    color: #b92b27;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+
+  .contenedor-footer li {
+    list-style: none;
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+
+  .titu {
+    font-size: 8vw;
+    margin-bottom: 34px;
+    text-align: center;
+    border-bottom: 5px solid whitesmoke;
+  }
+
+  .titu1 {
+    font-size: 84px;
+    margin-bottom: 34px;
+    text-align: center;
+    border-bottom: 5px solid whitesmoke;
+  }
+
+  .contacto {
+    max-width: 75%;
+  }
+
+  .contacto a img {
+    width: 85%;
+    margin-left: 60px;
+    margin-bottom: -1%;
+  }
+
+  .horario .dia {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .horario .hora {
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  .map {
+    height: 30vh;
+  }
+
+  .map iframe {
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+
+  .footer-part2 {
+    max-width: 100%;
+  }
+
+  .acerca-de {
+    width: 85%;
+    margin-top: 3%;
+  }
+
+  .contenedor-logos {
+    max-width: 80%;
+  }
+
+  .titulo-final {
+    margin-top: -1%;
+    width: 1500px;
+    background: #b92b27;
+  }
+
+  .titulo-final h2 {
+    font-size: 5.5vw;
+    line-height: 95%;
+  }
+
+  .titu-finales {
+    font-size: 4.5vw;
+    padding: 0 20px;
+  }
+
+}
+
+@media only screen and (max-width:1024px) {
+
+  header nav {
+    height: 6vh;
+  }
+
   .infocontacto {
-    font-size: 13px;
-    width: 30%;
-    line-height: 13px;
-    margin-left: 5%;
+    width: 25%;
   }
-  
-  .infocontacto .telef {
-    font-size: 15px;
+
+  .headp {
+    margin-top: 8%;
+  }
+
+}
+
+@media only screen and (max-width:1000px) {
+
+  header nav {
+    height: 12vh;
+  }
+
+  header {
+    height: 580px;
   }
 }
 
-
-@media screen and (max-width: 320px){
+@media screen and (max-width:850px) {
+  .icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13vw;
+    height: 100%;
+    color: #b92c27;
+    margin-top: -1%;
+    padding-right: 1%;
+    z-index: 110;
+    cursor: pointer;
+    right: 0;
+  }
 
   .logomenu {
+    display: block;
+    width: 70%;
+    margin-top: 2vh;
+    margin-bottom: -8vh;
+  }
+
+  .enlaces {
+    position: fixed;
+    font-size: 6vw;
+    margin-right: -.1%;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    transition: all 1s ease;
+    background: #00134d;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #00134d);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6f0000, #00134d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .uno {
+    -webkit-clip-path: circle(0% at 100% 0%);
+    clip-path: circle(0% at 100% 0%);
+  }
+
+  .dos {
+    -webkit-clip-path: circle(150% at 100% 0%);
+    clip-path: circle(150% at 100% 0%);
+  }
+
+  .enlaces a:hover,
+  .active {
+    border-top: 1vw solid #b92b27;
+    border-bottom: 1vw solid #b92b27;
+    font-size: 7vw;
+  }
+
+  nav .logo {
+    height: 100%;
+    width: 50%;
+    margin-left: 1%;
+  }
+
+  .infocontacto {
+    font-size: 4.5vw;
+    width: 40%;
+    line-height: 95%;
+    margin-right: 2%;
+  }
+
+  .infocontacto .telef {
+    font-size: 6vw;
+    margin-left: 10%;
+  }
+
+  header {
+    height: 90vh;
+  }
+
+  .headp {
+    margin-top: 22%;
+  }
+
+  /* barra social */
+  .barra-social {
+    top: 60%;
+  }
+
+  .iconobar .faceb {
+    height: 13vw;
+    width: 13vw;
+    padding: 1vw;
+    border-radius: 0 2.5vw 0px 0;
+  }
+
+  .iconobar .whats {
+    height: 13vw;
+    width: 13vw;
+    padding: .5vw;
+  }
+
+  .iconobar .mail {
+    height: 13vw;
+    width: 13vw;
+    padding: 1.5vw;
+  }
+
+  .iconobar .llamada {
+    height: 13vw;
+    width: 13vw;
+    padding: 1.5vw;
+    border-radius: 0 0px 2.5vw 0;
+  }
+
+  .barra:hover {
+    height: 16vw;
+    width: 16vw;
+    padding: 1.5vw;
+    border-radius: 0 26px 26px 0;
+  }
+
+  /*hacia arriba*/
+  .ir-arriba {
+    font-size: 14vw;
+    bottom: 2%;
+    right: 4%;
+  }
+
+  /* Busqueda */
+  header .areasearch {
+    height: 7%;
+  }
+
+  .areasearch form {
+    width: 100%;
+    margin-left: 15%;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  input,
+  button {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 7vh;
+    padding: 0;
+  }
+
+  input {
+    border-radius: 3.4vw;
+    font-size: 5vw;
+    padding-left: 10%;
+    z-index: 50;
+  }
+
+  button {
+    width: 20%;
+    font-size: 8vw;
+  }
+
+  #box-search {
+    position: fixed;
+    top: 19.5%;
+    width: 49%;
+    background: white;
+    overflow: hidden;
+    font-family: 'source sans pro';
+    font-size: 5vw;
+    font-weight: 600;
+    display: none;
+    z-index: 45;
+  }
+
+  #box-search li a {
+    display: block;
+    color: #666;
+    padding: 5%;
+    text-decoration: none;
+  }
+
+  #box-search li a:hover {
+    background: #f3f3f3;
+  }
+
+  #box-search li .bu {
+    color: #777777;
+    margin-right: 2%;
+    font-size: 5vw;
+  }
+
+  #cover-ctn-search {
+    margin-top: -6%;
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    left: 0;
+    z-index: 40;
+    display: none;
+  }
+
+  /* textos del header */
+  .headp .textos-header {
+    margin-top: 4%;
+  }
+
+  .textos-header h1 {
+    font-size: 13vw;
+    border-bottom: 6px double whitesmoke;
+    text-shadow: 1.5vw 1.5vw 1.5vw black;
+  }
+
+  .textos-header .encu {
+    letter-spacing: 12px;
+    margin-bottom: 3vh;
+  }
+
+  .textos-header .la {
+    letter-spacing: 12px;
+    margin-bottom: 3vh;
+  }
+
+  .textos-header .que {
+    margin-left: 10%;
+    letter-spacing: 9px;
+  }
+
+  .textos-header .atra {
+    margin: 6% 25% 0% 30%;
+    font-size: 5.5vw;
+    text-shadow: 1.5vw 1.5vw 1.5vw black;
+    letter-spacing: 5px;
+  }
+
+  .textos-header .servi {
+    font-size: 9.5vw;
+    letter-spacing: 5px;
+    margin-left: 10%;
+    text-shadow: 1.7vw 1.7vw 1.5vw black;
+  }
+
+  .textos-header .refa {
+    letter-spacing: 4px;
+    font-size: 5.5vw;
+    margin-left: 19%;
+    margin-right: 8%;
+    margin-top: -4%;
+    border-bottom: 7px double whitesmoke;
+    text-shadow: 1.7vw 1.7vw 1.5vw black;
+  }
+
+  .titulo {
+    font-size: 7vw;
+    padding: 5% none;
+    border-bottom: .8vw solid #b92b27;
+  }
+
+  /* sobre nosotros */
+  .sobre-nosotros {
+    height: 100%;
+  }
+
+  .contenedor-sobre-nosotros {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .imagen-about-us {
+    width: 70%;
+  }
+
+  .imagen-about-us>img {
+    width: 95%;
+    box-shadow: 0 0 3vw 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .sobre-nosotros .contenido-textos {
+    padding-top: 8%;
+    width: 80%;
+  }
+
+  .contenido-textos h3 {
+    font-size: 7vw;
+    margin-bottom: 5%;
+  }
+
+  .contenido-textos p {
+    font-size: 4vw;
+  }
+
+  .contenido-textos .botn-nosotros {
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  /* Catalogo */
+  .titulo-cat {
+    font-size: 7vw;
+    padding-top: 5%;
+    border-bottom: .8vw solid #b92b27;
+  }
+
+  .productos {
+    width: 100%;
+  }
+
+  a.btn {
+    font-size: 4.5vw;
+    border-radius: 14px;
+    padding: 1.4vw 5vw 1.6vw;
+  }
+
+  div.cards {
+    margin: 6% auto 15% auto;
+    width: 75%;
+    text-align: center;
+  }
+
+  div.card {
+    display: inline-block;
+    margin: 3vw 5vw;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.3s 0s ease-in;
+    transition: all 0.3s 0s ease-in;
+    z-index: 1;
+    max-width: 100%;
     width: 90%;
   }
 
-  nav .logo {
-    width: 50%;
-    margin-left: 0;
+  div.card .card__image-holder {
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding-bottom: 75%;
   }
-  
-  .infocontacto {
-    font-size: 13px;
-    width: 30%;
-    line-height: 7px;
-    margin-left: 1%;
+
+  div.card img {
+    margin-top: 0px;
+    max-width: 100%;
+    width: 100%;
   }
-  
-  .infocontacto .telef {
-    font-size: 15px;
+
+  div.card div.card-title a.toggle-info {
+    border-radius: 12vw;
+    height: 9vw;
+    padding: 0;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    width: 9vw;
+  }
+
+  div.card div.card-title a.toggle-info span {
+    height: .6vw;
+    top: 4.5vw;
+    width: 4.5vw;
+  }
+
+  div.card div.card-title a.toggle-info span.left {
+    right: 3.7vw;
+  }
+
+  div.card div.card-title a.toggle-info span.right {
+    left: 3.7vw;
+  }
+
+  div.card div.card-title h2 {
+    font-size: 7vw;
+    padding-top: 11%;
+    letter-spacing: .01em;
+  }
+
+  div.card div.card-title h2 small {
+    font-size: 5vw;
+    padding-bottom: 2%;
+  }
+
+  div.card div.card-description {
+    font-size: 4vw;
+  }
+
+  div.card.show div.card-title a.toggle-info span {
+    top: 4vw;
+  }
+
+  div.card.show div.card-title a.toggle-info span.left {
+    right: 2.3vw;
+  }
+
+  div.card.show div.card-title a.toggle-info span.right {
+    left: 2.3vw;
+  }
+
+  /* Servicios */
+  .servicios {
+    margin-top: 15%;
+  }
+
+  .servicio-cont {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ServicioContainer {
+    position: relative;
+    width: 80%;
+    height: 100vw;
+    margin: 4%;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+
+  .info>h2 {
+    font-size: 7vw;
+    padding: 0 1vw;
+  }
+
+  .info>p {
+    font-size: 4vw;
+  }
+
+  .front .img {
+    width: 70%;
+    height: 60%;
+    margin-top: 2vw;
+    margin-left: 13vw;
+  }
+
+  .back h2 {
+    font-size: 6vw;
+  }
+
+  .back li {
+    line-height: 4.5vw;
+    margin: 1.6vw 4.5vw;
+    font-size: 4vw;
+  }
+
+  .back .btn {
+    bottom: 2%;
+    width: calc(36% - 62px);
+    height: 9vw;
+    margin-left: 30vw;
+    border-radius: 10px;
+    font-size: 4.5vw;
+  }
+
+  /* Footer */
+
+  .enlaces-footer {
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+
+  .enlaces-footer:hover {
+    color: #b92b27;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+
+  .contenedor-footer li {
+    list-style: none;
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+
+  .titu {
+    font-size: 7vw;
+    margin-bottom: 5%;
+    text-align: center;
+    border-bottom: .5px solid whitesmoke;
+  }
+
+  .titu1 {
+    font-size: 7vw;
+    margin-bottom: 5%;
+    text-align: center;
+    border-bottom: .5vw solid whitesmoke;
+  }
+
+  .contacto {
+    max-width: 75%;
+  }
+
+  .contacto a img {
+    width: 85%;
+    margin-left: 8%;
+    margin-bottom: -1%;
+  }
+
+  .horario .dia {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .horario .hora {
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  .map {
+    height: 30vh;
+  }
+
+  .map iframe {
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+
+  .footer-part2 {
+    max-width: 100%;
+  }
+
+  .acerca-de {
+    width: 85%;
+    margin-top: 3%;
+  }
+
+  .contenedor-logos {
+    max-width: 80%;
+    height: 100%;
+    margin-bottom: 1%;
+  }
+
+  .logos>img {
+    width: 25%;
+    height: 25%;
+  }
+
+  #castrollogo {
+    display: none;
+  }
+
+  .titulo-final {
+    width: 900px;
+    background: #b92b27;
+  }
+
+  .titulo-final h2 {
+    font-size: 4.5vw;
+    line-height: 95%;
+    padding: 1% 11%;
+  }
+
+  .ctn-titufinales {
+    padding: 0 10%;
+  }
+
+  .titu-finales {
+    font-size: 4vw;
   }
 }
+
+@media only screen and (max-width:720px) {
+  .titulo {
+    font-size: 6vw;
+    margin: 0 20%;
+  }
+}
+
+@media (min-width:440px) and (max-width:540px) {
+  .headp .textos-header {
+    margin-top: 2%;
+  }
+
+  .textos-header h1 {
+    font-size: 13vw;
+    letter-spacing: 1vw;
+  }
+
+  .textos-header .encu {
+    margin-bottom: 1vh;
+  }
+
+  .textos-header .la {
+    margin-bottom: 1vh;
+  }
+
+  .textos-header .atra {
+    margin: 6% 20% 0% 30%;
+  }
+
+  .textos-header .servi {
+    font-size: 9.5vw;
+    letter-spacing: 5px;
+    margin-left: 10%;
+    text-shadow: 1.7vw 1.7vw 1.5vw black;
+  }
+
+  .textos-header .refa {
+    font-size: 5vw;
+    text-align: center;
+   }
+
+  .contacto{
+    margin-left: 5%;
+  }
+
+  .acerca-de{
+    margin-left: 5%;
+  }
+
+}
+
+
+@media (min-width:320px) and (max-width:400px) {
+  
+  .headp{
+    margin-top: 18%;
+    margin-left: 5%;
+  }
+  .textos-header h1 {
+    font-size: 10vw;
+    letter-spacing: 1vw;
+    margin-bottom: -3vw;
+  }
+
+  .textos-header .atra {
+    margin: 6% 30% 0% 10%;
+  }
+
+  .textos-header .servi {
+    font-size: 9vw;
+    letter-spacing: 2px;
+  }
+
+  .textos-header .refa {
+    font-size: 4vw;
+   }
+   
+  .contacto{
+    margin-left: 6%;
+  }
+
+  .acerca-de{
+    margin-top: 15%;
+    margin-left: 6%;
+  }
+  }
